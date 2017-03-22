@@ -18,4 +18,4 @@ process.stdin.on("end", function () {
     myObject.color = obj[2];
 
     printObjectProperty(myObject);
-}
+});
