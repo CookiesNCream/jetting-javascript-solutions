@@ -4,7 +4,6 @@ var Car = function(name, mileage, max_speed) {
     this.max_speed = max_speed;
 };
 
-//Don't edit anything below this line.
 function processData(input) {
     var my_car = new Car(input[0], input[1], input[2]) 
     console.log(my_car.name);
