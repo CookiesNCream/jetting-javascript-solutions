@@ -1,0 +1,32 @@
+/*index.html*/
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Button</title>
+        <link rel="stylesheet" href="css/button.css" type="text/css">
+    </head>
+    <body>
+        <button id="btn" class="btnClass"></button>
+        <script src="js/button.js" type="text/javascript"></script>
+    </body>
+</html>
+
+/*js/button.js*/
+
+var ClickMeButton = document.getElementById("btn");
+ClickMeButton.innerHTML = "0";
+document.body.appendChild(ClickMeButton);
+ClickMeButton.onclick = function() {
+    ClickMeButton.innerHTML++;
+};
+
+/*css/button.css*/
+
+.btnClass {
+    width: 96px;
+    height: 48px;
+    font-size: 24px;
+    color: #0000ff ;
+}
